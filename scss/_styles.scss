@@ -1,0 +1,67 @@
+header {
+  .container {
+    @extend %mycontainer;
+  }
+  .content {
+    @include styles;
+  }
+  ul {
+    display: flex;
+  }
+  li {
+    @include li;
+  }
+  .burgermenu {
+    @include burgermenu;
+  }
+  @media screen and (max-width: 720px) {
+    li {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 720px) {
+    .burgermenu {
+      display: none;
+    }
+  }
+}
+
+.banner {
+  @include banner;
+}
+
+section {
+  .container {
+    @extend %mycontainer;
+  }
+  .div1 {
+    @include abdula;
+  }
+
+  h5 {
+    @include h5;
+  }
+  h1 {
+    @include h1;
+  }
+  p {
+    @include p;
+  }
+  .content1 {
+    display: flex;
+  }
+  .right {
+    @include right;
+  }
+  .card {
+    @include card;
+
+    h3 {
+      @include h3;
+    }
+    p {
+      @include p1;
+    }
+  }
+}
